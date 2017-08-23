@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("img").hover(function(){
+                    $(this).attr("src", $(this).attr('data-alt-src'));
+                }, function(){
+                    $(this).attr("src", $(this).attr('data-src'));
+                }
+                );
+            });
+        </script>
+    </head>
+    <body>
+        <img style="width:200px" src="./images/aidorucat.png" data-alt-src="./images/dojocat.jpg" data-src="./images/aidorucat.png" alt="cat 1">
+        <img style="width:200px" src="./images/cherry.jpg" data-alt-src="./images/ironcat.png" data-src="./images/cherry.jpg" alt="cat 2">
+        <img style="width:200px" src="./images/codercat.jpg" data-alt-src="./images/jean-luc-picat.jpg" data-src="./images/codercat.jpg" alt="cat 3">
+        <img style="width:200px" src="./images/defunktocat.png" data-alt-src="./images/visionary.jpg" data-src="./images/defunktocat.png" alt="cat 4">
+    </body>
+</html>
